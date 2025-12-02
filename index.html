@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWARDS 2025 - AUEsp</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section id="uno">
+        <img src="img/logo.png" alt="Logo Awards 2025">
+        <p>¡El AWARDS 2025 ya está aquí! Nomina a tus favoritos.</p>
+    </section>
+
+    <section id="dos">
+        <button>¡NOMINA AHORA!</button>
+    </section>
+
+    <footer>
+        <div class="slide">
+            <span>• Artista del año • Dibujo del año • Mejor jugador • Mejor clip • Gifter del año • Staff favorito • "Entretenimiento" favorito • Mejor evento • Juego favorito • MVP • Usuario favorito</span>
+            <span>• Artista del año • Dibujo del año • Mejor jugador • Mejor clip • Gifter del año • Staff favorito • "Entretenimiento" favorito • Mejor evento • Juego favorito • MVP • Usuario favorito</span>
+        </div>   
+    </footer>
+
+    <div id="glow"></div>
+
+<script>
+  const glow = document.getElementById('glow');
+  const size = 50;
+
+  document.addEventListener('mousemove', (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    glow.style.background = `
+      radial-gradient(
+        circle ${size}px at ${x}px ${y}px,
+        rgba(255, 255, 0, 0.1), /* Color blanco muy transparente para el brillo */
+        rgba(0, 0, 0, 0)          /* Transparente total */
+      )
+    `;
+  });
+</script>
+    
+</body>
+</html>

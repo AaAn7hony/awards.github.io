@@ -1,0 +1,113 @@
+html{
+    background-color: black;
+    background-image: url(https://images.pond5.com/golden-awards-show-ceremony-background-088961339_prevstill.jpeg);
+    background-size:cover;
+    height:100vh;
+    font-family: segoe ui;
+}
+
+body {
+  color: white; 
+  position: relative; 
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+#glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  background: none; 
+  filter: blur(1px); 
+  opacity: 0.7;
+}
+
+#uno{
+    color:rgb(255, 232, 56);
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgb(255, 242, 54);
+    padding-top:10%;
+}
+
+img{
+  width:25%;
+}
+
+h1:hover, h4:hover, p:hover{
+    color:rgb(255, 239, 146);
+    cursor:default
+}
+
+#dos{
+    text-align: center;
+    padding-top:5%;
+}
+
+#dos button{
+    color:rgb(245, 255, 55);
+    padding:20px;
+    border:solid 1px rgb(245, 255, 55);
+    border-radius: 100px;
+    width:300px;
+    background-color: rgba(0,0,0,0);
+}
+
+#dos button:hover{
+    background-color: rgb(245, 255, 55);
+    color:black;
+    cursor:pointer;
+}
+
+#tres{
+    color:rgb(245, 255, 55);
+    font-size: 18px;
+    bottom: 0px;
+    text-align: center;
+}
+
+footer {
+    position:fixed;
+    bottom:0px;
+    font-weight: bold;
+    font-size:24px;
+    width:100%;
+    text-align: center;
+    color:yellow;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-shadow: 0 0 10px rgb(255, 242, 54);
+  background-color: rgb(0, 0, 0);
+}
+
+.slide {
+  display: inline-block; 
+  white-space:nowrap;
+  animation: slidee 15s linear infinite;
+}
+
+.slide span{
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+@keyframes slidee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+  
+}
