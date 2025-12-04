@@ -199,8 +199,8 @@
                 dibujoAno: document.getElementById('dibujoAno').value,
                 mejorClip: document.getElementById('mejorClip').value
             };
-            // Enviar a la API
-            fetch('/submit', {
+            // Enviar a Google Apps Script (reemplaza con tu URL)
+            fetch('https://script.google.com/macros/s/AKfycbwNmYImNZAFge2Z9DA_cnAawwyyU54KHVMDuU9jpQ6y--Z1DZgwEZmFOsenfNa4HjUC/exec', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
